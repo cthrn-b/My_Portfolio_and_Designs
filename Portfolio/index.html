@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catherine Bugarin — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<!-- ══ PAGE LOADER ══ -->
+<div id="page-loader" class="page-loader">
+  <div class="loader-inner">
+    <div class="loader-initials">CB</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <div class="loader-label">Loading Portfolio</div>
+  </div>
+</div>
+ 
+<!-- ══ NAV ══ -->
+<nav id="nav">
+  <a href="#" class="nav-logo">CB-PORTFOLIO</a>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="nav-links" id="navLinks" role="list">
+    <li><a href="#about">About</a></li>
+    <li><a href="#office">Office</a></li>
+    <li><a href="#school">School</a></li>
+    <li><a href="#freelance">Freelance</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+ 
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <svg width="0" height="0" class="svg-filters">
+    <defs>
+      <filter id="blood-drip" x="-5%" y="-5%" width="110%" height="200%">
+        <feTurbulence type="turbulence" baseFrequency="0.015 0.08" numOctaves="3" seed="5" result="noise">
+          <animate attributeName="seed" values="1;8;3;7;2;6;4;5;1" dur="6s" repeatCount="indefinite"/>
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G" result="displaced"/>
+        <feMorphology operator="dilate" radius="0 3" in="displaced" result="elongated"/>
+        <feBlend in="displaced" in2="elongated" mode="normal"/>
+      </filter>
+    </defs>
+  </svg>
+ 
+  <div class="hero-bg-text" aria-hidden="true">PORTFOLIO</div>
+ 
+  <svg class="crack-overlay" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g stroke="white" stroke-width="0.6" fill="none" opacity="0.7">
+      <path d="M720,450 L560,200 L480,60"/><path d="M720,450 L820,120 L900,20"/>
+      <path d="M720,450 L950,350 L1200,280"/><path d="M720,450 L1100,600 L1380,700"/>
+      <path d="M720,450 L500,620 L200,780"/><path d="M720,450 L380,500 L60,480"/>
+      <path d="M720,450 L700,700 L640,900"/><path d="M720,450 L800,750 L820,900"/>
+      <path d="M560,200 L440,250 L300,220" stroke-width="0.4"/>
+      <path d="M820,120 L780,60 L750,0" stroke-width="0.4"/>
+      <path d="M950,350 L1020,250 L1100,240" stroke-width="0.3"/>
+      <path d="M500,620 L420,700 L380,820" stroke-width="0.4"/>
+    </g>
+    <circle cx="720" cy="450" r="8" fill="rgba(255,255,255,0.12)"/>
+    <circle cx="720" cy="450" r="20" fill="none" stroke="white" stroke-width="0.4" opacity="0.4"/>
+    <circle cx="720" cy="450" r="40" fill="none" stroke="white" stroke-width="0.2" opacity="0.2"/>
+  </svg>
+ 
+  <div class="hero-content">
+    <div class="hero-left-col">
+      <div class="hero-eyebrow reveal-up">
+        <span class="eyebrow-line"></span>
+        <span>UI/UX &amp; Graphic Designer</span>
+      </div>
+      <h1 class="hero-name glitch reveal-up delay-1" data-text="CATHERINE BUGARIN">CATHERINE BUGARIN</h1>
+      <p class="hero-title reveal-up delay-2">UI/UX Designer &nbsp;·&nbsp; Graphic Designer &nbsp;·&nbsp; IT Graduate</p>
+    </div>
+    <div class="hero-right reveal-up delay-3">
+      <p class="hero-desc">Detail-oriented IT graduate with hands-on experience in UI/UX design, web development, and digital asset creation. 486-hour internship. Real-world solutions.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item"><span class="meta-num">04</span><span class="meta-label">Years<br>Learning</span></div>
+        <div class="hero-meta-divider"></div>
+        <div class="hero-meta-item"><span class="meta-num">35</span><span class="meta-label">Projects<br>Completed</span></div>
+      </div>
+      <a href="#contact" class="hero-cta">
+        <span>Get In Touch</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+ 
+  <div class="hero-scroll" aria-label="Scroll down">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+ 
+  <!-- Ambient orbs -->
+  <div class="hero-orb hero-orb--1" aria-hidden="true"></div>
+  <div class="hero-orb hero-orb--2" aria-hidden="true"></div>
+</section>
+ 
+<!-- ══ MARQUEE 1 ══ -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item">UI / UX Design</div><div class="marquee-item">Graphic Design</div>
+    <div class="marquee-item">Figma</div><div class="marquee-item">Web Development</div>
+    <div class="marquee-item">Branding</div><div class="marquee-item">Prototyping</div>
+    <div class="marquee-item">Quezon City</div><div class="marquee-item">UI / UX Design</div>
+    <div class="marquee-item">Graphic Design</div><div class="marquee-item">Figma</div>
+    <div class="marquee-item">Web Development</div><div class="marquee-item">Branding</div>
+    <div class="marquee-item">Prototyping</div><div class="marquee-item">Quezon City</div>
+  </div>
+</div>
+ 
+<!-- ══ ABOUT ══ -->
+<section class="about" id="about">
+  <div class="about-left">
+    <div class="section-label">00 — Profile</div>
+    <h2 class="about-heading reveal-up">WHO<br><span class="outline">I</span><br>AM.</h2>
+    <div class="about-number" aria-hidden="true">2026</div>
+  </div>
+  <div class="about-right">
+    <p class="about-bio reveal-up">Detail-oriented Information Technology graduate (August 2026) from National Teachers College, Quiapo, Manila. Hands-on experience in UI/UX design, web development, and data-driven systems. Completed a 486-hour internship at Ablaze Marketing delivering real-world solutions in CRM prototyping, digital asset design, and data management.</p>
+    <div class="skills-grid reveal-up delay-1">
+      <div class="skill-item">UI/UX · Canva</div>
+      <div class="skill-item">Figma · Wireframing</div>
+      <div class="skill-item">HTML · CSS · JS</div>
+      <div class="skill-item">PHP · MySQL</div>
+      <div class="skill-item">AWS S3 · Supabase</div>
+      <div class="skill-item">Arduino · ESP32</div>
+      <div class="skill-item">Excel · Sheets</div>
+      <div class="skill-item">Branding · Posters</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══ SECTION 01 — OFFICE WORKS ══ -->
+<section class="works-section" id="office">
+  <div class="section-banner">
+    <div class="section-banner-inner">
+      <span class="section-eyebrow">01 / Ablaze Marketing Internship</span>
+      <h2 class="section-banner-title reveal-up">OFFICE<br><em>WORKS</em></h2>
+      <span class="section-banner-count">09 pieces</span>
+    </div>
+  </div>
+ 
+  <div class="project-hero reveal">
+    <div class="project-hero-img thumb-01 lb-trigger" data-src="images/crm_dashboard.png" data-title="CRM Dashboard Design" role="button" tabindex="0" aria-label="View CRM Dashboard Design"></div>
+    <div class="project-hero-content">
+      <span class="proj-tag">UI/UX · Figma · 2026</span>
+      <h3 class="proj-hero-title">CRM Dashboard<br>Design</h3>
+      <p class="proj-hero-desc">End-to-end CRM interface built for Ablaze Marketing — streamlining client data, pipeline tracking, and team workflows inside a single Figma prototype.</p>
+      <span class="proj-hero-index" aria-hidden="true">001</span>
+    </div>
+  </div>
+ 
+  <div class="project-grid-2 reveal">
+    <div class="project-card">
+      <div class="project-card-img thumb-03 lb-trigger" data-src="images/coffee_prototype_pos.png" data-title="Coffee POS Prototype" role="button" tabindex="0" aria-label="View Coffee POS Prototype"></div>
+      <div class="project-card-info">
+        <span class="proj-tag">Figma · Prototyping · 2026</span>
+        <h3 class="proj-title">Coffee POS<br>Prototype</h3>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-02 lb-trigger" data-src="images/ablaze_announcement.png" data-title="Ablaze Announcement Post" role="button" tabindex="0" aria-label="View Ablaze Announcement Post"></div>
+      <div class="project-card-info">
+        <span class="proj-tag">Graphic Design · Social Media · 2026</span>
+        <h3 class="proj-title">Ablaze Announcement Post</h3>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="section-divider reveal"><span class="divider-label">Graphic Design — Print &amp; Digital</span></div>
+ 
+  <div class="project-grid-3 reveal">
+    <div class="project-card">
+      <div class="project-card-img thumb-04 lb-trigger" data-src="images/brochure.png" data-title="Marketing Brochure" role="button" tabindex="0" aria-label="View Marketing Brochure"></div>
+      <div class="project-card-info"><span class="proj-tag">Print · Layout · 2026</span><h3 class="proj-title">Marketing Brochure</h3></div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-08 lb-trigger" data-src="images/banner.png" data-title="Event Banner" role="button" tabindex="0" aria-label="View Event Banner"></div>
+      <div class="project-card-info"><span class="proj-tag">Banner · Branding · 2026</span><h3 class="proj-title">Event Banner</h3></div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-09 lb-trigger" data-src="images/hiring_ads.png" data-title="Hiring Ads" role="button" tabindex="0" aria-label="View Hiring Ads"></div>
+      <div class="project-card-info"><span class="proj-tag">Digital Ads · 2026</span><h3 class="proj-title">Hiring Ads</h3></div>
+    </div>
+  </div>
+ 
+  <div class="section-divider reveal"><span class="divider-label">Events — Valentine Campaign</span></div>
+ 
+  <div class="project-strip reveal">
+    <div class="project-strip-card">
+      <div class="project-strip-img thumb-05 lb-trigger" data-src="images/valentine_invitation.png" data-title="Valentine Invitation" role="button" tabindex="0" aria-label="View Valentine Invitation"></div>
+      <div class="project-strip-info"><span class="proj-tag">Event Design · 2026</span><h3 class="proj-strip-title">Valentine Invitation</h3></div>
+    </div>
+    <div class="project-strip-card">
+      <div class="project-strip-img thumb-06 lb-trigger" data-src="images/valentine_photostrip.png" data-title="Valentine Photostrip" role="button" tabindex="0" aria-label="View Valentine Photostrip"></div>
+      <div class="project-strip-info"><span class="proj-tag">Branding · 2026</span><h3 class="proj-strip-title">Valentine Photostrip</h3></div>
+    </div>
+    <div class="project-strip-card">
+      <div class="project-strip-img thumb-07 lb-trigger" data-src="images/valentine_shirts.png" data-title="Valentine Shirts" role="button" tabindex="0" aria-label="View Valentine Shirts"></div>
+      <div class="project-strip-info"><span class="proj-tag">Apparel · 2026</span><h3 class="proj-strip-title">Valentine Shirts</h3></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══ SECTION 02 — SCHOOL WORKS ══ -->
+<section class="works-section" id="school">
+  <div class="section-banner section-banner--alt">
+    <div class="section-banner-inner">
+      <span class="section-eyebrow">02 / NTC Academic Projects</span>
+      <h2 class="section-banner-title reveal-up">SCHOOL<br><em>WORKS</em></h2>
+      <span class="section-banner-count">09 pieces</span>
+    </div>
+  </div>
+ 
+  <div class="project-hero project-hero--flip reveal">
+    <div class="project-hero-img thumb-10 lb-trigger" data-src="images/school/petsmate_admin_dashboard.png" data-title="Pet's Mate Admin Dashboard" role="button" tabindex="0" aria-label="View Pet's Mate Admin Dashboard"></div>
+    <div class="project-hero-content">
+      <span class="proj-tag">Full-Stack · PHP · MySQL · AWS S3 · 2025</span>
+      <h3 class="proj-hero-title">Pet's Mate<br>Admin Dashboard</h3>
+      <p class="proj-hero-desc">A full-stack pet care management system — admin and user dashboards built with PHP, MySQL, and AWS S3 image hosting. Designed for real deployment.</p>
+      <span class="proj-hero-index" aria-hidden="true">002</span>
+    </div>
+  </div>
+ 
+  <div class="project-grid-2 reveal">
+    <div class="project-card project-card--tall">
+      <div class="project-card-img thumb-11 lb-trigger" data-src="images/school/petsmate_user_dashboard.png" data-title="Pet's Mate User Dashboard" role="button" tabindex="0" aria-label="View Pet's Mate User Dashboard"></div>
+      <div class="project-card-info"><span class="proj-tag">Responsive UI · 2025</span><h3 class="proj-title">Pet's Mate User Dashboard</h3></div>
+    </div>
+    <div class="project-card project-card--tall">
+      <div class="project-card-img thumb-17 lb-trigger" data-src="images/school/bantaybayan_layout.png" data-title="BantayBayan System Layout" role="button" tabindex="0" aria-label="View BantayBayan System Layout"></div>
+      <div class="project-card-info"><span class="proj-tag">Web · IoT · 2025</span><h3 class="proj-title">BantayBayan System Layout</h3></div>
+    </div>
+  </div>
+ 
+  <div class="section-divider reveal"><span class="divider-label">UI / UX — Figma App Designs</span></div>
+ 
+  <div class="project-grid-3 reveal">
+    <div class="project-card">
+      <div class="project-card-img thumb-12 lb-trigger" data-src="images/freelance/figma_cr87_home.png" data-title="CR87 — Home Screen" role="button" tabindex="0" aria-label="View CR87 — Home Screen"></div>
+      <div class="project-card-info"><span class="proj-tag">Figma · Mobile · 2024</span><h3 class="proj-title">CR87 — Home</h3></div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-13 lb-trigger" data-src="images/freelance/figma_cr87_login.png" data-title="CR87 — Login Screen" role="button" tabindex="0" aria-label="View CR87 — Login Screen"></div>
+      <div class="project-card-info"><span class="proj-tag">Figma · Mobile · 2024</span><h3 class="proj-title">CR87 — Login</h3></div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-14 lb-trigger" data-src="images/freelance/figma_cr87.png" data-title="CR87 — Full Prototype" role="button" tabindex="0" aria-label="View CR87 — Full Prototype"></div>
+      <div class="project-card-info"><span class="proj-tag">Full Prototype · 2024</span><h3 class="proj-title">CR87 — Full Flow</h3></div>
+    </div>
+  </div>
+ 
+  <div class="project-grid-2 reveal grid-mt">
+    <div class="project-card">
+      <div class="project-card-img thumb-15 lb-trigger" data-src="images/freelance/foundareachlogo.png" data-title="FoundaReach — Logo" role="button" tabindex="0" aria-label="View FoundaReach — Logo"></div>
+      <div class="project-card-info"><span class="proj-tag">Branding · Logo · 2023</span><h3 class="proj-title">FoundaReach — Logo</h3></div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-16 lb-trigger" data-src="images/freelance/foundareachhome.png" data-title="FoundaReach — Home" role="button" tabindex="0" aria-label="View FoundaReach — Home"></div>
+      <div class="project-card-info"><span class="proj-tag">UI/UX · Figma · 2023</span><h3 class="proj-title">FoundaReach — Home</h3></div>
+    </div>
+  </div>
+ 
+  <div class="section-divider reveal"><span class="divider-label">IoT — BantayBayan System</span></div>
+ 
+  <div class="project-grid-2 reveal">
+    <div class="project-card">
+      <div class="project-card-img thumb-18 lb-trigger" data-src="images/school/bantaybayan_devices.png" data-title="BantayBayan Devices" role="button" tabindex="0" aria-label="View BantayBayan Devices"></div>
+      <div class="project-card-info"><span class="proj-tag">Arduino · ESP32 · 2025</span><h3 class="proj-title">BantayBayan Devices</h3></div>
+    </div>
+    <div class="project-card project-card--quote">
+      <div class="project-card-info project-card-info--center">
+        <span class="proj-tag">Academic · NTC · 2025</span>
+        <h3 class="proj-title proj-title--statement">Built for real impact — not just grades.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══ SECTION 03 — FREELANCE & OWN ══ -->
+<section class="works-section" id="freelance">
+  <div class="section-banner section-banner--red">
+    <div class="section-banner-inner">
+      <span class="section-eyebrow">03 / Apr 2023 – Sept 2025</span>
+      <h2 class="section-banner-title reveal-up">FREELANCE<br><em>&amp; OWN</em></h2>
+      <span class="section-banner-count">13 pieces</span>
+    </div>
+  </div>
+ 
+  <div class="project-hero reveal">
+    <div class="project-hero-img thumb-19 lb-trigger" data-src="images/freelance/figma_ablaze_revamp.png" data-title="Ablaze Website Revamp" role="button" tabindex="0" aria-label="View Ablaze Website Revamp"></div>
+    <div class="project-hero-content">
+      <span class="proj-tag">UI/UX · Figma · Web Design · 2025</span>
+      <h3 class="proj-hero-title">Ablaze Website<br>Revamp</h3>
+      <p class="proj-hero-desc">Full redesign of Ablaze Marketing's public website in Figma — modernised branding, improved hierarchy, and a bold visual identity refresh that the team could ship.</p>
+      <span class="proj-hero-index" aria-hidden="true">003</span>
+    </div>
+  </div>
+ 
+  <div class="project-grid-2 reveal">
+    <div class="project-card">
+      <div class="project-card-img thumb-20 lb-trigger" data-src="images/school/yummylemon_website.png" data-title="Yummy Lemon Website" role="button" tabindex="0" aria-label="View Yummy Lemon Website"></div>
+      <div class="project-card-info"><span class="proj-tag">Web Design · UI · 2024</span><h3 class="proj-title">Yummy Lemon Website</h3></div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-21 lb-trigger" data-src="images/freelance/figma_finwise.png" data-title="FinWise Finance App" role="button" tabindex="0" aria-label="View FinWise Finance App"></div>
+      <div class="project-card-info"><span class="proj-tag">UI/UX · Figma · Mobile · 2024</span><h3 class="proj-title">FinWise Finance App</h3></div>
+    </div>
+  </div>
+ 
+  <div class="section-divider reveal"><span class="divider-label">Mobile — App UI / UX</span></div>
+ 
+  <div class="project-strip reveal">
+    <div class="project-strip-card">
+      <div class="project-strip-img thumb-22 lb-trigger" data-src="images/freelance/figma_finwise_home.png" data-title="FinWise — Home" role="button" tabindex="0" aria-label="View FinWise — Home"></div>
+      <div class="project-strip-info"><span class="proj-tag">Finance · 2024</span><h3 class="proj-strip-title">FinWise — Home</h3></div>
+    </div>
+    <div class="project-strip-card">
+      <div class="project-strip-img thumb-23 lb-trigger" data-src="images/freelance/figma_finwise_reg.png" data-title="FinWise — Registration" role="button" tabindex="0" aria-label="View FinWise — Registration"></div>
+      <div class="project-strip-info"><span class="proj-tag">Onboarding · 2024</span><h3 class="proj-strip-title">FinWise — Reg</h3></div>
+    </div>
+    <div class="project-strip-card">
+      <div class="project-strip-img thumb-24 lb-trigger" data-src="images/freelance/figma_bookfig.png" data-title="BookFig App" role="button" tabindex="0" aria-label="View BookFig App"></div>
+      <div class="project-strip-info"><span class="proj-tag">Reading · 2024</span><h3 class="proj-strip-title">BookFig App</h3></div>
+    </div>
+    <div class="project-strip-card">
+      <div class="project-strip-img thumb-25 lb-trigger" data-src="images/freelance/figma_bookfig_home.png" data-title="BookFig — Home Screen" role="button" tabindex="0" aria-label="View BookFig — Home Screen"></div>
+      <div class="project-strip-info"><span class="proj-tag">Figma · 2024</span><h3 class="proj-strip-title">BookFig — Home</h3></div>
+    </div>
+    <div class="project-strip-card">
+      <div class="project-strip-img thumb-30 lb-trigger" data-src="images/school/movetivation_layout.png" data-title="Movetivation Layout" role="button" tabindex="0" aria-label="View Movetivation Layout"></div>
+      <div class="project-strip-info"><span class="proj-tag">Fitness · 2024</span><h3 class="proj-strip-title">Movetivation</h3></div>
+    </div>
+  </div>
+ 
+  <div class="section-divider reveal"><span class="divider-label">Coffee App — Login Screen Series</span></div>
+ 
+  <div class="project-cinema reveal">
+    <div class="cinema-card"><div class="cinema-img thumb-26 lb-trigger" data-src="images/freelance/figma_coffee_login_1.png" data-title="Coffee App — Login 1" role="button" tabindex="0" aria-label="View Coffee App — Login 1"></div><span class="cinema-label">Screen 01</span></div>
+    <div class="cinema-card"><div class="cinema-img thumb-27 lb-trigger" data-src="images/freelance/figma_coffee_login_2.png" data-title="Coffee App — Login 2" role="button" tabindex="0" aria-label="View Coffee App — Login 2"></div><span class="cinema-label">Screen 02</span></div>
+    <div class="cinema-card"><div class="cinema-img thumb-28 lb-trigger" data-src="images/freelance/figma_coffee_login_3.png" data-title="Coffee App — Login 3" role="button" tabindex="0" aria-label="View Coffee App — Login 3"></div><span class="cinema-label">Screen 03</span></div>
+    <div class="cinema-card"><div class="cinema-img thumb-29 lb-trigger" data-src="images/freelance/figma_coffee_login_4.png" data-title="Coffee App — Login 4" role="button" tabindex="0" aria-label="View Coffee App — Login 4"></div><span class="cinema-label">Screen 04</span></div>
+  </div>
+ 
+  <div class="section-divider reveal"><span class="divider-label">Print — Posters &amp; QR</span></div>
+ 
+  <div class="project-grid-3 reveal">
+    <div class="project-card">
+      <div class="project-card-img thumb-31 lb-trigger" data-src="images/school/school_poster.png" data-title="School Event Poster" role="button" tabindex="0" aria-label="View School Event Poster"></div>
+      <div class="project-card-info"><span class="proj-tag">Print · Typography · 2024</span><h3 class="proj-title">School Event Poster</h3></div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-32 lb-trigger" data-src="images/freelance/matchacafe_qrposter.png" data-title="Matcha Café QR Poster" role="button" tabindex="0" aria-label="View Matcha Café QR Poster"></div>
+      <div class="project-card-info"><span class="proj-tag">Branding · QR · 2023</span><h3 class="proj-title">Matcha Café QR</h3></div>
+    </div>
+    <div class="project-card">
+      <div class="project-card-img thumb-33 lb-trigger" data-src="images/freelance/retrocoffee_qrposter.png" data-title="Retro Coffee QR Poster" role="button" tabindex="0" aria-label="View Retro Coffee QR Poster"></div>
+      <div class="project-card-info"><span class="proj-tag">Retro Design · QR · 2023</span><h3 class="proj-title">Retro Coffee QR</h3></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══ MARQUEE 2 ══ -->
+<div class="marquee-wrap dark" aria-hidden="true">
+  <div class="marquee-track reverse">
+    <div class="marquee-item">Available for Hire</div><div class="marquee-item">Open to Collaboration</div>
+    <div class="marquee-item">Quezon City · Philippines</div><div class="marquee-item">Available for Hire</div>
+    <div class="marquee-item">Open to Collaboration</div><div class="marquee-item">Quezon City · Philippines</div>
+    <div class="marquee-item">Available for Hire</div><div class="marquee-item">Open to Collaboration</div>
+    <div class="marquee-item">Quezon City · Philippines</div>
+  </div>
+</div>
+ 
+<!-- ══ CONTACT ══ -->
+<section class="contact" id="contact">
+  <div>
+    <div class="section-label">04 — Let's Connect</div>
+    <h2 class="contact-heading reveal-up">GET IN<br><span class="outline">TOUCH</span></h2>
+    <p class="contact-sub reveal-up delay-1">Open to new opportunities, collaborations, and creative projects.</p>
+  </div>
+  <div class="contact-right">
+    <div class="contact-info reveal-up delay-2">
+      <div class="contact-row">
+        <span class="contact-row-label">Email</span>
+        <span class="contact-row-value"><a href="mailto:cthrnbugarin@gmail.com">cthrnbugarin@gmail.com</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-label">Phone</span>
+        <span class="contact-row-value">+63 975-4111-135</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-label">LinkedIn</span>
+        <span class="contact-row-value"><a href="https://www.linkedin.com/in/catherine-bugarin/" target="_blank" rel="noopener noreferrer">linkedin.com/in/catherine-bugarin</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-label">GitHub</span>
+        <span class="contact-row-value"><a href="https://github.com/cthrn-b" target="_blank" rel="noopener noreferrer">github.com/cthrn-b</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-row-label">Location</span>
+        <span class="contact-row-value">33 Catanduanes St., Brgy. Paltok, Quezon City</span>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══ FOOTER ══ -->
+<footer>
+  <span>© 2026 Catherine Bugarin. All Rights Reserved.</span>
+  <span>UI/UX · Graphic Design · IT Graduate</span>
+  <span>Quezon City, PH</span>
+</footer>
+ 
+<!-- ══ LIGHTBOX ══ -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+  <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+  <div class="lightbox-frame">
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Project preview" />
+    <div class="lightbox-meta" id="lightbox-meta"></div>
+  </div>
+</div>
+ 
+<!-- ══ CUSTOM CURSOR ══ -->
+<div id="cursor-dot" aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+ 
+<script src="main.js"></script>
+</body>
+</html>
+ 
